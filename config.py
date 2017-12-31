@@ -696,7 +696,7 @@ c.confirm_quit = ['downloads']
 
 ## Enable plugins in Web pages.
 ## Type: Bool
-# c.content.plugins = False
+c.content.plugins = True
 
 ## Draw the background color and images also when the page is printed.
 ## Type: Bool
@@ -1400,11 +1400,14 @@ config.unbind('f')
 config.unbind('F')
 config.unbind('d')
 config.unbind('b')
+config.unbind('<Ctrl-q>')
 # config.bind("'", 'enter-mode jump_mark')
 config.bind('<Alt-Shift-T>', 'set-cmd-text -s :spawn ')
-config.bind('=', 'zoom-in')
-config.bind('-', 'zoom-out')
-config.bind('T', 'set zoom.text_only ' + str(not c.zoom.text_only))
+config.bind('=',             'zoom-in')
+config.bind('-',             'zoom-out')
+config.bind('T',             'set zoom.text_only ' + str(not c.zoom.text_only))
+config.bind('ts',            'set statusbar.hide ' + str(not c.statusbar.hide))
+config.bind('tt',            'set tabs.show '      + ('always' if c.tabs.show == 'switching' else 'switching'))
 # config.bind('.', 'repeat-command')
 config.bind('/',        'set-cmd-text /')
 config.bind('<Ctrl-f>', 'set-cmd-text /')
