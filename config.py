@@ -17,50 +17,62 @@ c.aliases = { 'q'              : 'quit',
               'tDictionary'    : 'open -t http://dictionary.com/browse/',
               'bDictionary'    : 'open -b http://dictionary.com/browse/',
               'wDictionary'    : 'open -w http://dictionary.com/browse/',
+              'pDictionary'    : 'open -p http://dictionary.com/browse/',
               'Facebook'       : 'open https://www.facebook.com/',
               'tFacebook'      : 'open -t https://www.facebook.com/',
               'bFacebook'      : 'open -b https://www.facebook.com/',
               'wFacebook'      : 'open -w https://www.facebook.com/',
+              'pFacebook'      : 'open -p https://www.facebook.com/',
               'IMDb'           : 'open http://www.imdb.com/find?s=all&q=',
               'tIMDb'          : 'open -t http://www.imdb.com/find?s=all&q=',
               'bIMDb'          : 'open -b http://www.imdb.com/find?s=all&q=',
               'wIMDb'          : 'open -w http://www.imdb.com/find?s=all&q=',
+              'pIMDb'          : 'open -p http://www.imdb.com/find?s=all&q=',
               'GoogleImages'   : 'open https://www.google.com/search?tbm=isch&q=',
               'tGoogleImages'  : 'open -t https://www.google.com/search?tbm=isch&q=',
               'bGoogleImages'  : 'open -b https://www.google.com/search?tbm=isch&q=',
               'wGoogleImages'  : 'open -w https://www.google.com/search?tbm=isch&q=',
+              'pGoogleImages'  : 'open -p https://www.google.com/search?tbm=isch&q=',
               'GoogleMaps'     : 'open https://www.google.com/maps',
               'tGoogleMaps'    : 'open -t https://www.google.com/maps',
               'bGoogleMaps'    : 'open -b https://www.google.com/maps',
               'wGoogleMaps'    : 'open -w https://www.google.com/maps',
+              'pGoogleMaps'    : 'open -p https://www.google.com/maps',
               'GoogleVoice'    : 'open https://www.google.com/voice',
               'tGoogleVoice'   : 'open -t https://www.google.com/voice',
               'bGoogleVoice'   : 'open -b https://www.google.com/voice',
               'wGoogleVoice'   : 'open -w https://www.google.com/voice',
+              'pGoogleVoice'   : 'open -p https://www.google.com/voice',
               'RottenTomatoes' : 'open http://www.rottentomatoes.com/search/?search=',
               'tRottenTomatoes': 'open -t http://www.rottentomatoes.com/search/?search=',
               'bRottenTomatoes': 'open -b http://www.rottentomatoes.com/search/?search=',
               'wRottenTomatoes': 'open -w http://www.rottentomatoes.com/search/?search=',
+              'pRottenTomatoes': 'open -p http://www.rottentomatoes.com/search/?search=',
               'Thesaurus'      : 'open http://thesaurus.com/browse/',
               'tThesaurus'     : 'open -t http://thesaurus.com/browse/',
               'bThesaurus'     : 'open -b http://thesaurus.com/browse/',
               'wThesaurus'     : 'open -w http://thesaurus.com/browse/',
+              'pThesaurus'     : 'open -p http://thesaurus.com/browse/',
               'Wikipedia'      : 'open http://en.wikipedia.org/wiki/Special:Search?search=',
               'tWikipedia'     : 'open -t http://en.wikipedia.org/wiki/Special:Search?search=',
               'bWikipedia'     : 'open -b http://en.wikipedia.org/wiki/Special:Search?search=',
               'wWikipedia'     : 'open -w http://en.wikipedia.org/wiki/Special:Search?search=',
+              'pWikipedia'     : 'open -p http://en.wikipedia.org/wiki/Special:Search?search=',
               'Wiktionary'     : 'open http://en.wiktionary.org/w/index.php?title=Special:Search?search=',
               'tWiktionary'    : 'open -t http://en.wiktionary.org/w/index.php?title=Special:Search?search=',
               'bWiktionary'    : 'open -b http://en.wiktionary.org/w/index.php?title=Special:Search?search=',
               'wWiktionary'    : 'open -w http://en.wiktionary.org/w/index.php?title=Special:Search?search=',
+              'pWiktionary'    : 'open -p http://en.wiktionary.org/w/index.php?title=Special:Search?search=',
               'Yahoo!'         : 'open https://mail.yahoo.com/',
               'tYahoo!'        : 'open -t https://mail.yahoo.com/',
               'bYahoo!'        : 'open -b https://mail.yahoo.com/',
               'wYahoo!'        : 'open -w https://mail.yahoo.com/',
+              'pYahoo!'        : 'open -p https://mail.yahoo.com/',
               'YouTube'        : 'open https://www.youtube.com/results?search_query=',
               'tYouTube'       : 'open -t https://www.youtube.com/results?search_query=',
               'bYouTube'       : 'open -b https://www.youtube.com/results?search_query=',
-              'wYouTube'       : 'open -w https://www.youtube.com/results?search_query='                     }
+              'wYouTube'       : 'open -w https://www.youtube.com/results?search_query=',
+              'pYouTube'       : 'open -p https://www.youtube.com/results?search_query='                     }
 
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
@@ -1589,46 +1601,57 @@ config.bind( 'dd',   'set-cmd-text -s :Dictionary')
 config.bind('tdd',   'set-cmd-text -s :tDictionary')
 config.bind('bdd',   'set-cmd-text -s :bDictionary')
 config.bind('wdd',   'set-cmd-text -s :wDictionary')
+config.bind('pdd',   'set-cmd-text -s :pDictionary')
 config.bind( 'fb',   'Facebook')
 config.bind('tfb',   'tFacebook')
 config.bind('bfb',   'bFacebook')
 config.bind('wfb',   'wFacebook')
+config.bind('pfb',   'pFacebook')
 config.bind( 'gi',   'set-cmd-text -s :GoogleImages')
 config.bind('tgi',   'set-cmd-text -s :tGoogleImages')
 config.bind('bgi',   'set-cmd-text -s :bGoogleImages')
 config.bind('wgi',   'set-cmd-text -s :wGoogleImages')
+config.bind('pgi',   'set-cmd-text -s :pGoogleImages')
 config.bind( 'gm',   'GoogleMaps')
 config.bind('tgm',   'tGoogleMaps')
 config.bind('bgm',   'bGoogleMaps')
 config.bind('wgm',   'wGoogleMaps')
+config.bind('pgm',   'pGoogleMaps')
 config.bind( 'gvo',  'GoogleVoice')
 config.bind('tgvo',  'tGoogleVoice')
 config.bind('bgvo',  'bGoogleVoice')
 config.bind('wgvo',  'wGoogleVoice')
+config.bind('pgvo',  'pGoogleVoice')
 config.bind( 'rt',   'set-cmd-text -s :RottenTomatoes')
 config.bind('trt',   'set-cmd-text -s :tRottenTomatoes')
 config.bind('brt',   'set-cmd-text -s :bRottenTomatoes')
 config.bind('wrt',   'set-cmd-text -s :wRottenTomatoes')
+config.bind('prt',   'set-cmd-text -s :pRottenTomatoes')
 config.bind( 'dt',   'set-cmd-text -s :Thesaurus')
 config.bind('tdt',   'set-cmd-text -s :tThesaurus')
 config.bind('bdt',   'set-cmd-text -s :bThesaurus')
 config.bind('wdt',   'set-cmd-text -s :wThesaurus')
+config.bind('pdt',   'set-cmd-text -s :pThesaurus')
 config.bind( 'wiki', 'set-cmd-text -s :Wikipedia')
 config.bind('twiki', 'set-cmd-text -s :tWikipedia')
 config.bind('bwiki', 'set-cmd-text -s :bWikipedia')
 config.bind('wwiki', 'set-cmd-text -s :wWikipedia')
+config.bind('pwiki', 'set-cmd-text -s :pWikipedia')
 config.bind('wikt',  'set-cmd-text -s :Wiktionary')
 config.bind('twikt', 'set-cmd-text -s :tWiktionary')
 config.bind('bwikt', 'set-cmd-text -s :bWiktionary')
 config.bind('wwikt', 'set-cmd-text -s :wWiktionary')
+config.bind('pwikt', 'set-cmd-text -s :pWiktionary')
 config.bind( 'ym',   'Yahoo!')
 config.bind('tym',   'tYahoo!')
 config.bind('bym',   'bYahoo!')
 config.bind('wym',   'wYahoo!')
+config.bind('pym',   'pYahoo!')
 config.bind( 'yt',   'set-cmd-text -s :YouTube')
 config.bind('tyt',   'set-cmd-text -s :tYouTube')
 config.bind('byt',   'set-cmd-text -s :bYouTube')
 config.bind('wyt',   'set-cmd-text -s :wYouTube')
+config.bind('pyt',   'set-cmd-text -s :pYouTube')
 
 ## Bindings for caret mode
 # config.bind('$', 'move-to-end-of-line', mode='caret')
