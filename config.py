@@ -23,11 +23,11 @@ c.aliases = { 'q'              : 'quit',
               'bFacebook'      : 'open -b https://www.facebook.com/',
               'wFacebook'      : 'open -w https://www.facebook.com/',
               'pFacebook'      : 'open -p https://www.facebook.com/',
-              'IMDb'           : 'open http://www.imdb.com/find?s=all&q=',
-              'tIMDb'          : 'open -t http://www.imdb.com/find?s=all&q=',
-              'bIMDb'          : 'open -b http://www.imdb.com/find?s=all&q=',
-              'wIMDb'          : 'open -w http://www.imdb.com/find?s=all&q=',
-              'pIMDb'          : 'open -p http://www.imdb.com/find?s=all&q=',
+              'GitHub'         : 'open https://github.com/WammKD',
+              'tGitHub'        : 'open -t https://github.com/WammKD',
+              'bGitHub'        : 'open -b https://github.com/WammKD',
+              'wGitHub'        : 'open -w https://github.com/WammKD',
+              'pGitHub'        : 'open -p https://github.com/WammKD',
               'GoogleImages'   : 'open https://www.google.com/search?tbm=isch&q=',
               'tGoogleImages'  : 'open -t https://www.google.com/search?tbm=isch&q=',
               'bGoogleImages'  : 'open -b https://www.google.com/search?tbm=isch&q=',
@@ -43,6 +43,11 @@ c.aliases = { 'q'              : 'quit',
               'bGoogleVoice'   : 'open -b https://www.google.com/voice',
               'wGoogleVoice'   : 'open -w https://www.google.com/voice',
               'pGoogleVoice'   : 'open -p https://www.google.com/voice',
+              'IMDb'           : 'open http://www.imdb.com/find?s=all&q=',
+              'tIMDb'          : 'open -t http://www.imdb.com/find?s=all&q=',
+              'bIMDb'          : 'open -b http://www.imdb.com/find?s=all&q=',
+              'wIMDb'          : 'open -w http://www.imdb.com/find?s=all&q=',
+              'pIMDb'          : 'open -p http://www.imdb.com/find?s=all&q=',
               'RottenTomatoes' : 'open http://www.rottentomatoes.com/search/?search=',
               'tRottenTomatoes': 'open -t http://www.rottentomatoes.com/search/?search=',
               'bRottenTomatoes': 'open -b http://www.rottentomatoes.com/search/?search=',
@@ -1607,6 +1612,11 @@ config.bind('tfb',   'tFacebook')
 config.bind('bfb',   'bFacebook')
 config.bind('wfb',   'wFacebook')
 config.bind('pfb',   'pFacebook')
+config.bind( 'gh',   'GitHub')
+config.bind('tgh',   'tGitHub')
+config.bind('bgh',   'bGitHub')
+config.bind('wgh',   'wGitHub')
+config.bind('pgh',   'pGitHub')
 config.bind( 'gi',   'set-cmd-text -s :GoogleImages')
 config.bind('tgi',   'set-cmd-text -s :tGoogleImages')
 config.bind('bgi',   'set-cmd-text -s :bGoogleImages')
