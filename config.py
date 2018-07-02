@@ -1113,7 +1113,7 @@ c.input.insert_mode.auto_load = True
 ## as it can cause issues with some bitmap fonts. As an alternative to
 ## this, it's possible to set font sizes and the `zoom.default` setting.
 ## Type: Bool
-# c.qt.highdpi = False
+c.qt.highdpi = True
 
 ## Show a scrollbar.
 ## Type: Bool
