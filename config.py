@@ -746,7 +746,7 @@ c.content.plugins = True
 
 ## List of user stylesheet filenames to use.
 ## Type: List of File, or File
-# c.content.user_stylesheets = []
+c.content.user_stylesheets = ["~/.config/qutebrowser/stylesheets/duckduckgo.css"]
 
 ## Enable WebGL.
 ## Type: Bool
