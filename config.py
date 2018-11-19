@@ -77,7 +77,12 @@ c.aliases = { 'q'              : 'quit',
               'tYouTube'       : 'open -t https://www.youtube.com/results?search_query=',
               'bYouTube'       : 'open -b https://www.youtube.com/results?search_query=',
               'wYouTube'       : 'open -w https://www.youtube.com/results?search_query=',
-              'pYouTube'       : 'open -p https://www.youtube.com/results?search_query='                     }
+              'pYouTube'       : 'open -p https://www.youtube.com/results?search_query=',
+              'Bulbapedia'     : 'open https://bulbapedia.bulbagarden.net/w/index.php?search=',
+              'tBulbapedia'    : 'open -t https://bulbapedia.bulbagarden.net/w/index.php?search=',
+              'bBulbapedia'    : 'open -b https://bulbapedia.bulbagarden.net/w/index.php?search=',
+              'wBulbapedia'    : 'open -w https://bulbapedia.bulbagarden.net/w/index.php?search=',
+              'pBulbapedia'    : 'open -p https://bulbapedia.bulbagarden.net/w/index.php?search='            }
 
 ## Time interval (in milliseconds) between auto-saves of
 ## config/cookies/etc.
@@ -1663,6 +1668,11 @@ config.bind('tyt',   'set-cmd-text -s :tYouTube')
 config.bind('byt',   'set-cmd-text -s :bYouTube')
 config.bind('wyt',   'set-cmd-text -s :wYouTube')
 config.bind('pyt',   'set-cmd-text -s :pYouTube')
+config.bind( 'bp',   'set-cmd-text -s :Bulbapedia')
+config.bind('tbp',   'set-cmd-text -s :tBulbapedia')
+config.bind('bbp',   'set-cmd-text -s :bBulbapedia')
+config.bind('wbp',   'set-cmd-text -s :wBulbapedia')
+config.bind('pbp',   'set-cmd-text -s :pBulbapedia')
 
 ## Bindings for caret mode
 # config.bind('$', 'move-to-end-of-line', mode='caret')
