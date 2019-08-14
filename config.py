@@ -630,7 +630,7 @@ c.content.cookies.accept = 'no-3rdparty'
 ## required to exactly match the requested domain. Local domains are
 ## always exempt from hostblocking.
 ## Type: List of String
-# c.content.host_blocking.whitelist = ['piwik.org']
+c.content.host_blocking.whitelist = ['piwik.org', 'www.googleadservices.com']
 
 ## Enable hyperlink auditing (`<a ping>`).
 ## Type: Bool
