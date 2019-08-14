@@ -714,7 +714,7 @@ c.content.host_blocking.whitelist = ['piwik.org', 'www.googleadservices.com']
 ## still be downloaded by clicking the download button in the pdf.js
 ## viewer.
 ## Type: Bool
-# c.content.pdfjs = True
+c.content.pdfjs = True
 
 ## Enable plugins in Web pages.
 ## Type: Bool
