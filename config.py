@@ -1760,9 +1760,13 @@ config.bind('<Ctrl-Tab>',          'tab-focus',                mode='insert')
 config.bind('<Ctrl-Shift-PgUp>',   'tab-move -',               mode='insert')
 config.bind('<Ctrl-Shift-PgDown>', 'tab-move +',               mode='insert')
 config.bind('<Ctrl-w>',            'tab-close',                mode='insert')
+config.bind('<Alt-Left>',          'back',                     mode='insert')
+config.bind('<Alt-Right>',         'forward',                  mode='insert')
 config.bind('<Alt-d>',             'set-cmd-text -s :open',    mode='insert')
+config.bind('<Alt-t>',             'set-cmd-text -s :open -b', mode='insert')
 config.bind('<Ctrl-t>',            'set-cmd-text -s :open -t', mode='insert')
 config.bind('<Ctrl-n>',            'set-cmd-text -s :open -w', mode='insert')
+config.bind('<Ctrl-Shift-n>',      'set-cmd-text -s :open -p', mode='insert')
 # config.bind('<Shift-Ins>', 'insert-text {primary}', mode='insert')
 
 ## Bindings for passthrough mode
