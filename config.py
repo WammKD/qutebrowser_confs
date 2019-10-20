@@ -661,6 +661,7 @@ c.content.host_blocking.whitelist = ['piwik.org', 'www.googleadservices.com']
 ## Enable JavaScript.
 ## Type: Bool
 # c.content.javascript.enabled = True
+config.set('content.javascript.enabled', False, '*://www.nytimes.com/*')
 
 ## Log levels to use for JavaScript console logging messages. When a
 ## JavaScript message with the level given in the dictionary key is
