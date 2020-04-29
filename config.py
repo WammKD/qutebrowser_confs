@@ -668,6 +668,7 @@ c.content.host_blocking.whitelist = ['piwik.org', 'www.googleadservices.com']
 # c.content.javascript.enabled = True
 config.set('content.javascript.enabled', False, '*://*.nytimes.com/*')
 config.set('content.javascript.enabled', False, '*://*.latimes.com/*')
+config.set('content.javascript.enabled', False, '*://*.bostonglobe.com/*')
 config.set('content.javascript.enabled', False, '*://*.washingtonpost.com/*')
 
 ## Log levels to use for JavaScript console logging messages. When a
