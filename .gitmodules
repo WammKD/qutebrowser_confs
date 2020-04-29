@@ -2,3 +2,4 @@
 	path = adwaita
 	url = https://github.com/WammKD/Adwaita-Theme-for-Qutebrowser
 	update = merge
+	branch = master
