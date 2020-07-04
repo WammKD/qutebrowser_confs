@@ -525,7 +525,7 @@ c.colors.tabs.odd.fg = '#888'
 c.confirm_quit = ['downloads']
 
 ## Need QT 5.10; Ubuntu 18.04 is on 5.9.5
-# c.content.autoplay = False
+c.content.autoplay = False
 
 ## Enable support for the HTML 5 web application cache feature. An
 ## application cache acts like an HTTP cache in some sense. For documents
